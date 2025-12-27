@@ -1,0 +1,70 @@
+/* Suggestions box */
+.suggestions {
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+.suggestion-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Prediction card */
+#predictionResult {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  max-width: 400px;
+  background-color: #fafafa;
+  border-radius: 8px;
+}
+
+/* Traffic color coding */
+.traffic.light { color: green; font-weight: bold; }
+.traffic.moderate { color: orange; font-weight: bold; }
+.traffic.heavy { color: red; font-weight: bold; }
+
+/* Very small mini calendar */
+/* Ultra compact calendar */
+
+#calendar {
+  max-width: 200px;
+  font-size: 9px;
+  margin-top: 10px;
+}
+
+/* Month title */
+.fc .fc-toolbar-title {
+  font-size: 11px;
+}
+
+/* Buttons */
+.fc-button {
+  padding: 1px 3px;
+  font-size: 8px;
+}
+
+/* Day numbers */
+.fc-daygrid-day-number {
+  font-size: 8px;
+}
+
+/* Hide event text (show on click only) */
+.fc-event-title {
+  display: none;
+}
+/* Sunday */
+.fc-day-sun {
+  background-color: #ffe6e6 !important;
+}
+
+/* Saturday */
+.fc-day-sat {
+  background-color: #e6f0ff !important;
+}

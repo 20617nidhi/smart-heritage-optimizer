@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sanskriti Saarthi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+
+<style>
+body {
+  font-family: Arial;
+  background:#f5f7fa;
+  padding:15px;
+}
+
+input, button {
+  padding:10px;
+  font-size:16px;
+}
+
+button {
+  background:#007bff;
+  color:white;
+  border:none;
+  cursor:pointer;
+}
+
+#autocomplete-list div {
+  background:white;
+  padding:8px;
+  border-bottom:1px solid #ddd;
+  cursor:pointer;
+}
+
+#map {
+  height:220px;       /* reduced size */
+  margin:12px 0;
+  border-radius:8px;
+}
+
+
+#heritageList li {
+  background:white;
+  margin:6px 0;
+  padding:8px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+#siteDetails {
+  background:white;
+  padding:12px;
+  border-radius:8px;
+  margin-top:10px;
+}
+
+.badge {
+  padding:5px 10px;
+  border-radius:6px;
+  font-weight:bold;
+}
+
+.traffic-light { background:#c8e6c9; }
+.traffic-moderate { background:#fff3cd; }
+.traffic-heavy { background:#f8d7da; }
+</style>
+
+
+</head>
+
+<body>
+
+<h2>Sanskriti Saarthi</h2>
+
+<input id="searchInput" placeholder="Enter city or heritage site">
+<button onclick="searchHeritage()">Search</button>
+
+<div id="autocomplete-list"></div>
+
+<ul id="heritageList"></ul>
+
+<div id="map"></div>
+
+<div id="siteDetails">
+  <p>Traffic: <span id="traffic"></span></p>
+  <p>Best Time Slot: <span id="slot"></span></p>
+  <p>Clearance: <span id="clearance"></span></p>
+  <a id="mapsLink" target="_blank"></a>
+</div>
+
+<div id="calendar"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
